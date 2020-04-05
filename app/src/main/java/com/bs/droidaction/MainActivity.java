@@ -28,10 +28,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        topIeText = findViewById(R.id.topIeText);
-        topTextView = findViewById(R.id.topTextView);
-        topClearButton = findViewById(R.id.topClearButton);
-        topCheckbox = findViewById(R.id.checkBox);
+        topIeText = findViewById(R.id.editTextBox);
+        topTextView = findViewById(R.id.nameTextView);
+        topClearButton = findViewById(R.id.clearButton);
+        topCheckbox = findViewById(R.id.showTextCheckBox);
 
         topClearButton.setOnClickListener(new View.OnClickListener() {
             @Override
