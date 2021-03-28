@@ -43,7 +43,7 @@
                             android:layout_marginTop="4dp"
                             android:layout_marginEnd="8dp"
                             android:layout_marginBottom="4dp"
-                            android:text="Clear"
+                            android:text="@string/clear_button"
                             android:textSize="18sp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
@@ -83,24 +83,44 @@
                             android:layout_gravity="center"
                             android:layout_marginStart="24dp"
                             android:layout_marginTop="16dp"
-                            android:layout_marginEnd="16dp"
                             android:layout_marginBottom="16dp"
                             android:checked="true"
                             android:gravity="center"
                             android:padding="10pt"
-                            android:text="show text"
+                            android:text="@string/show_text_on_delay"
                             android:textColor="@android:color/white"
                             app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toStartOf="@+id/nameTextView"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
                             tools:text="show text" />
+
+                        <EditText
+                            android:id="@+id/showTextOnDelay"
+                            android:layout_width="169dp"
+                            android:layout_height="61dp"
+                            android:layout_marginStart="16dp"
+                            android:ems="10"
+                            android:inputType="number"
+                            app:layout_constraintStart_toEndOf="@+id/showTextCheckBox"
+                            tools:layout_editor_absoluteY="28dp" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frame3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
 
                         <TextView
                             android:id="@+id/nameTextView"
                             android:layout_width="90pt"
                             android:layout_height="25pt"
-                            android:layout_marginStart="16dp"
                             android:layout_marginTop="4dp"
                             android:layout_marginEnd="8dp"
                             android:layout_marginBottom="4dp"
@@ -112,20 +132,15 @@
                             android:textSize="18sp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.545"
-                            app:layout_constraintStart_toEndOf="@+id/showTextCheckBox"
                             app:layout_constraintTop_toTopOf="parent" />
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
-
                 </FrameLayout>
 
                 <FrameLayout
-                    android:id="@+id/frame3"
+                    android:id="@+id/frame4"
                     android:layout_width="match_parent"
-                    android:layout_height="50pt"
-                    android:layout_gravity="center"
-                    android:visibility="gone">
+                    android:layout_height="50pt">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
@@ -166,7 +181,41 @@
                             app:layout_constraintTop_toTopOf="parent" />
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
+                </FrameLayout>
 
+                <FrameLayout
+                    android:id="@+id/frame5"
+                    android:layout_width="match_parent"
+                    android:layout_height="50pt">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/starImageView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="70dp"
+                            android:layout_marginTop="32dp"
+                            android:layout_marginBottom="32dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/starSwitch"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@android:drawable/btn_star_big_off" />
+
+                        <Switch
+                            android:id="@+id/starSwitch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="70dp"
+                            android:layout_marginTop="32dp"
+                            android:layout_marginBottom="32dp"
+                            android:text="@string/star_switch"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
                 </FrameLayout>
 
             </LinearLayout>
